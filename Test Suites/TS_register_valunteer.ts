@@ -46,10 +46,4 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/register_Volunteer/TC_Register_random_data</testCaseId>
    </testCaseLink>
-   <testCaseLink>
-      <guid>ea759bf8-2bca-46d4-95b1-b61b091ea60f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/register_Volunteer/TC_upload_file</testCaseId>
-   </testCaseLink>
 </TestSuiteEntity>

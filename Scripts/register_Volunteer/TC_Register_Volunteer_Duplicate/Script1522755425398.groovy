@@ -19,11 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-
-
 //create duplicate register
-
-//call testcase register volunteer
 
 WebUI.openBrowser('')
 WebUI.navigateToUrl('http://vivblind.play2pay.me/')
@@ -60,13 +56,12 @@ WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_PHONE')
 WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_CELL_PHONE'),GlobalVariable.cell_phone)
 WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_FAX'),GlobalVariable.fax)
 
-
 WebUI.click(findTestObject('register_Volunteer/input_submit'))
 WebUI.delay(2)
 
-WebUI.verifyTextPresent('กรุณากรอกอีเมลที่ใช้งานจริงเพื่อให้ทางมูลนิธิติดต่อกลับได้', false)
+
 WebUI.verifyTextPresent('อีเมลนี้ถูกใช้งานไปแล้ว', false) 
 
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 
 

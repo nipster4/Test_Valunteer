@@ -62,4 +62,4 @@ WebUI.delay(2)
 WebUI.verifyTextPresent('ขอบคุณสำหรับการลงทะเบียนโปรดตรวจสอบที่อีเมลของท่านเพื่อทำการระบุตัวตน', false)
 
 
-//WebUI.closeBrowser()
+WebUI.closeBrowser()

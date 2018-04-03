@@ -47,14 +47,13 @@ WebUI.navigateToUrl('http://vivblind.play2pay.me/')
 WebUI.click(findTestObject('register_Volunteer/regis/register_btn/register_btn'))
 WebUI.delay(2)
 
-
 Random ran = new Random();
 int num = ran.nextInt(26) + (byte)'a';
 System.out.println((char)num);
 String randomString = (char)num;
 String randomEmail = randomString + "@gmail.com";
 
-WebUI.setText(findTestObject('branch/branch_info/input_branches_name'), randomString+'frde')
+WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_email'), randomEmail)
 //int branch_name = 10
 //Random rand = new Random()
 //int index = rand.nextInt(branch_name + 1)
@@ -74,8 +73,6 @@ for (int i = 0; i < 14; i++) {
 	randomNumber += number;
 }
 
-
-WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_email'),GlobalVariable.email)
 WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_password'),GlobalVariable.password)
 WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_confirm_password'),GlobalVariable.confirm_password)
 WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_first_name_th'),GlobalVariable.first_name_th)
@@ -91,12 +88,17 @@ WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_ADDRESS
 WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_ADDRESS_ROAD'),GlobalVariable.address_road)
 
 WebUI.selectOptionByLabel(findTestObject('Object Repository/register_Volunteer/input_ADDRESS_PROVINCE'), GlobalVariable.address_province, false)
+WebUI.delay(2)
 WebUI.selectOptionByLabel(findTestObject('Object Repository/register_Volunteer/input_ADDRESS_DISTRICT'), GlobalVariable.address_district, false)
+WebUI.delay(2)
 WebUI.selectOptionByLabel(findTestObject('Object Repository/register_Volunteer/input_ADDRESS_SUBDISTRICT'), GlobalVariable.address_subdistrict, false)
-WebUI.selectOptionByLabel(findTestObject('Object Repository/register_Volunteer/input_ADDRESS_POSTCODE'),GlobalVariable.address_postcode)
-
+WebUI.delay(2)
+WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_ADDRESS_POSTCODE'),GlobalVariable.address_postcode)
+WebUI.delay(2)
 WebUI.selectOptionByLabel(findTestObject('Object Repository/register_Volunteer/input_STATUS_EDU_WORK'),GlobalVariable.status_edu_work, false)
+WebUI.delay(2)
 WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_ADDRESS_ALL'),GlobalVariable.address_all)
+WebUI.delay(2)
 WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_PHONE'),GlobalVariable.phone)
 WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_CELL_PHONE'),GlobalVariable.cell_phone)
 WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_FAX'),GlobalVariable.fax)
@@ -106,9 +108,8 @@ WebUI.setText(findTestObject('Object Repository/register_Volunteer/input_FAX'),G
 WebUI.click(findTestObject('register_Volunteer/input_submit'))
 WebUI.delay(2)
 
-WebUI.verifyTextPresent('ขอบคุณสำหรับการลงทะเบียนโปรดตรวจสอบที่อีเมลของท่านเพื่อทำการระบุตัวตน', false)
+WebUI.verifyTextPresent('', false)
 
 
-
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 

@@ -23,10 +23,10 @@ import org.openqa.selenium.Keys as Keys
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://vivblind.play2pay.me/')
-WebUI.setText(findTestObject('Login/input_EMAIL'), ' ')
-WebUI.setText(findTestObject('Login/input_password'), ' ')
+WebUI.setText(findTestObject('Login/input_EMAIL'), 'mocomocopw@gmail.com')
+WebUI.setText(findTestObject('Login/input_password'), '11111')
 WebUI.click(findTestObject('Login/button_'))
 WebUI.delay(2)
 
-WebUI.verifyTextPresent(' ', false)
+WebUI.verifyTextPresent('การยืนยันกิจกรรม', false)
 WebUI.delay(2)
