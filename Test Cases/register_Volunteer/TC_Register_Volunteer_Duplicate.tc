@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Register_Volunteer_Duplicate</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>052499a5-7d78-450d-84b1-d39fb85a5dd2</testCaseGuid>
+</TestCaseEntity>
